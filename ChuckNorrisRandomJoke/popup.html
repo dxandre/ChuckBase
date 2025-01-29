@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Chuck Norris Random Joke (Greek)</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    .container {
+      display: flex;
+      align-items: start;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      width: 320px;
+      position: relative;
+    }
+
+    .joke-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 10px;
+    }
+
+    .joke-title {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .joke-text {
+      max-width: 320px;
+      padding-bottom: 20px;
+    }
+
+    .author {
+      position: absolute;
+      bottom: 5px;
+      right: 10px;
+      color: gainsboro;
+    }
+
+    .joke-image {
+      width: 50px;
+      height: 50px;
+    }
+
+    .small-button {
+      background-color: rgb(255, 192, 56);
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 12px;
+      text-align: center;
+      position: relative;
+      bottom: 5px;
+      left: 5px;
+      font-weight: bold;
+    }
+
+    .small-button:hover {
+      background-color: rgb(226, 164, 30);
+    }
+
+    .fact-form {
+      display: none;
+      flex-direction: column;
+      margin-top: 10px;
+    }
+
+    .fact-form input,
+    .fact-form textarea {
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 340px;
+      resize: vertical;
+      min-height: 20px;
+      max-height: 340px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <img class="joke-image" src="icon.png" alt="Chuck Norris">
+    <div class="joke-content">
+      <div class="joke-title">Fact</div>
+      <div class="joke-text" id="joke"></div>
+    </div>
+  </div>
+
+  <button class="small-button" id="addYoursBtn"><i class="fas fa-plus"></i> add one </button>
+  <div class="fact-form" id="factForm">
+    <textarea id="factInput" rows="4" cols="50" placeholder="must be a fact...  ツ"></textarea>
+    <button class="small-button" id="submitBtn">Submit</button>
+  </div>
+  <div class="author">a.D</div>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>
